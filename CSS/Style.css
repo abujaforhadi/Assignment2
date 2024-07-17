@@ -1,1 +1,204 @@
-git
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+
+
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.font-italic {
+    font-family: "Great Vibes", cursive;
+}
+
+.class-orange {
+    color: #E6533C;
+}
+
+.color-black {
+    background-color: black;
+}
+
+.color-bg1 {
+    background-color: #E6533C;
+}
+
+.class-btn {
+    color: white;
+    font-family: Inter;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    border-radius: 2.9rem;
+    height: 54px;
+
+
+}
+
+.class-flex {
+    display: flex;
+
+}
+
+/* nav bar */
+.container {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
+.navbar {
+    justify-content: space-between;
+    margin: 54px 190px;
+    align-items: center;
+}
+
+.logo-title {
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.burger {
+    display: none;
+}
+
+/* hero */
+.hero {
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.hero-title {
+
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 50%;
+}
+
+span {
+    font-family: "Great Vibes", cursive;
+
+    font-weight: 400;
+    Font-size: 78px;
+    Row-height: 1px;
+    Letter-spacing: 0%;
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    width: 50%;
+}
+
+.content-all {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 60%;
+    padding: 10px;
+    margin-left: 170px;
+    margin-top: -400px;
+
+}
+
+.ball {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+    ;
+
+
+}
+
+.other-content {
+    color: rgba(239, 237, 232, 0.65);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.content-all2 {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 50%;
+    padding: 10px;
+    margin-left: -70px;
+    margin-top: 100px;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    .navbar {
+        margin: 54px 20px;
+    }
+
+    .burger {
+        display: inline;
+
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero{
+        display: inline;
+    }
+    .hero-title{
+        font-size: 2.8rem;
+        width: 70%;
+    }
+   
+
+}
