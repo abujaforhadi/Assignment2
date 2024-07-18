@@ -11,6 +11,7 @@ body {
     font-family: "Inter", sans-serif;
     background-color: black;
     color: white;
+
 }
 
 .font-italic {
@@ -22,7 +23,7 @@ body {
 }
 
 .color-black {
-    background-color: black;
+    background-color: #000000;
 }
 
 .color-bg1 {
@@ -38,7 +39,8 @@ body {
     letter-spacing: 0px;
     text-align: center;
     border-radius: 2.9rem;
-    height: 54px;
+    margin-top: 20px;
+    padding: 20px;
 
 
 }
@@ -51,6 +53,7 @@ body {
 /* nav bar */
 .container {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    padding-bottom: 20px;
 }
 
 .navbar {
@@ -95,7 +98,10 @@ body {
 .hero {
     justify-content: center;
     align-items: center;
+}
 
+.hero-img {
+    height: 580px;
 }
 
 
@@ -111,7 +117,6 @@ body {
 
 span {
     font-family: "Great Vibes", cursive;
-
     font-weight: 400;
     Font-size: 78px;
     Row-height: 1px;
@@ -147,7 +152,7 @@ span {
     width: 40px;
     border-radius: 50%;
     background-color: #E6533C;
-    ;
+
 
 
 }
@@ -168,10 +173,66 @@ span {
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
+    align-items: center;
+    justify-content: center;
     width: 50%;
     padding: 10px;
     margin-left: -70px;
     margin-top: 100px;
+}
+
+/* habits */
+.habits-titles {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.habit-paragraph {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 58px;
+
+}
+
+.habits-content {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    justify-content: center;
+}
+
+.habits-img img{
+    border-radius: 50%;
+    padding-bottom: 5%;
+}
+.habits-content {
+    text-align: center;
+
+}
+
+.habits-dis {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    padding: 0 20%;
+    padding-top: 2%;
 }
 
 
@@ -179,6 +240,10 @@ span {
 
 /* responsive */
 @media screen and (max-width: 576px) {
+    body {
+        padding: 15px;
+    }
+
     .navbar {
         margin: 54px 20px;
     }
@@ -192,13 +257,29 @@ span {
         display: none;
     }
 
-    .hero{
+    .hero {
         display: inline;
     }
-    .hero-title{
+
+    .hero-title {
         font-size: 2.8rem;
         width: 70%;
     }
-   
+
+    .content-all2 {
+        margin-left: 15px;
+        margin-top: 100px;
+        width: 35%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+
+    }
+    .habits-content{
+        flex-direction: column;
+        gap: 40px;
+    }
+
 
 }
