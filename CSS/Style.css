@@ -12,7 +12,15 @@ body {
     background-color: black;
     color: white;
 
+
+
 }
+
+.text-left {
+    text-align: left;
+
+}
+
 
 .font-italic {
     font-family: "Great Vibes", cursive;
@@ -30,6 +38,10 @@ body {
     background-color: #E6533C;
 }
 
+.padding-botton {
+    padding-bottom: 5%;
+}
+
 .class-btn {
     color: white;
     font-family: Inter;
@@ -41,6 +53,7 @@ body {
     border-radius: 2.9rem;
     margin-top: 20px;
     padding: 20px;
+    width: 12.5rem;
 
 
 }
@@ -182,7 +195,10 @@ span {
 }
 
 /* habits */
-.habits-titles {
+.habits-titles,
+.tracking-titles,
+.bmi-titles,
+.team-title {
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 3rem;
@@ -192,7 +208,10 @@ span {
     text-align: center;
 }
 
-.habit-paragraph {
+.habit-paragraph,
+.tracking-paragraph,
+.bmi-paragraph,
+.team-description {
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: 1rem;
@@ -200,7 +219,7 @@ span {
     line-height: 24px;
     letter-spacing: 0.3px;
     text-align: center;
-    margin-bottom: 58px;
+
 
 }
 
@@ -214,10 +233,11 @@ span {
     justify-content: center;
 }
 
-.habits-img img{
+.habits-img img {
     border-radius: 50%;
     padding-bottom: 5%;
 }
+
 .habits-content {
     text-align: center;
 
@@ -234,6 +254,155 @@ span {
     padding: 0 20%;
     padding-top: 2%;
 }
+
+.tracking {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 7%;
+    justify-content: space-between;
+    padding: 3%;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+
+}
+
+.tracking-titles,
+.tracking-paragraph {
+    text-align: left;
+    width: 90%;
+}
+
+
+.tracking-img img {
+    border-radius: 18px;
+    width: 90%;
+}
+
+.bmi-calculator {
+    text-align: center;
+    margin: 0 30%;
+    margin-bottom: 58px;
+
+}
+
+.bmi-title,
+.bmi-paragraph {
+    text-align: left;
+
+}
+
+
+/* bmi-table */
+.bmi-table {
+    background: rgb(34, 34, 34);
+    justify-content: space-around;
+    text-align: left;
+    padding: 5%;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+th {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    padding: 17px;
+
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    padding: 17px;
+
+}
+
+
+input {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 40%;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 10px;
+    margin: 1%;
+
+
+}
+
+/* team-imgs */
+.team-imgs img {
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2);
+    height: 272px;
+    width: 90%;
+}
+
+.team {
+    margin: 7%;
+}
+
+.team-imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.name {
+
+    margin-left: 20px;
+    margin-top: -50px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+
+}
+
+.position {
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.50);
+
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
 
 
 
@@ -269,16 +438,26 @@ span {
     .content-all2 {
         margin-left: 15px;
         margin-top: 100px;
-        width: 35%;
+
     }
 
     .hero-title {
         font-size: 2rem;
 
     }
-    .habits-content{
+
+    .habits-content {
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
+    }
+
+    .tracking {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        gap: 20px;
+        padding-left: 2rem;
     }
 
 
