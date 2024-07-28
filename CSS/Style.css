@@ -131,8 +131,8 @@ body {
 span {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
-    Font-size: 78px;
-    Row-height: 1px;
+    Font-size: 4.6rem;
+
 
 }
 
@@ -198,7 +198,8 @@ span {
 .habits-titles,
 .tracking-titles,
 .bmi-titles,
-.team-title {
+.team-title,
+.membership-title {
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 3rem;
@@ -393,7 +394,7 @@ input {
 
 }
 
-.position {
+.position,.lists {
     margin-left: 20px;
     color: rgba(255, 255, 255, 0.50);
     font-family: Inter;
@@ -401,6 +402,79 @@ input {
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+}
+
+/* membership */
+.membership {
+    margin: 0 7%;
+    background: radial-gradient(50.77% 36.77% at 85% 53%, rgba(108, 108, 108, 0.48), rgba(0, 0, 0, 0) 100%), radial-gradient(36.88% 36.72% at 31% 46%, rgba(108, 108, 108, 0.5), rgba(108, 108, 108, 0) 100%);
+
+}
+
+.membership .membership-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7%;
+
+}
+
+.paclist {
+    border-radius: 50px;
+    margin: 2% 40%;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    background: rgb(217, 217, 217);
+    margin-top: 2%;
+
+}
+
+.trainer1 {
+    border-radius: 50px;
+    box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+    background: #E6533C;
+    padding: 20px 30px;
+
+}
+
+.trainer2 {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+.package {
+    border-radius: 50px;
+    padding: 4%;
+
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    background: rgba(61, 61, 61, 0.8);
+    transition: transform 3s ,background-color 2s ease-in .1s;
+}
+.package:hover {
+    background-color:#e6533c56;
+    
+    transform: rotateY(40deg);
+
+
+}
+
+
+.package-titles {
+    border-radius: 100px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    margin: 0 30%;
+    margin-bottom: 5%;
+
+}
+
+h6 {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 /* footer */
@@ -529,12 +603,21 @@ hr {
         display: inline;
     }
 
-    .team-imgs,.footer-cont {
+    .team-imgs,
+    .membership .membership-div,.footer-cont {
         display: grid;
         grid-template-columns: 1fr;
 
     }
-    .footer-cont{
+    .paclist{
+        margin: 3% 10%;
+        zoom: 80%;
+    }
+    .membership {
+        margin-bottom: 40%;
+    }
+
+    .footer-cont {
         margin: 2%;
     }
 
