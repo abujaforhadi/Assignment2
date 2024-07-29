@@ -101,6 +101,12 @@ body {
 
 
 }
+#home{
+    border-radius: 46px;
+
+background: rgb(230, 83, 60);
+padding: 5px 20px;
+}
 
 .burger {
     display: none;
@@ -344,22 +350,27 @@ td {
 
 }
 
-
-input {
+input,
+select {
     border-radius: 8px;
+    padding: 12px 20px 12px 20px;
+    margin: 10px 0;
     background: rgba(255, 255, 255, 0.1);
-    width: 40%;
     color: rgba(255, 255, 255, 0.6);
     font-family: Inter;
     font-size: 1rem;
     font-weight: 400;
     line-height: 22px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     text-align: left;
-    padding: 10px;
-    margin: 1%;
-
-
+    width: 40%;
+    
+}
+#sex{
+    width: 45%;
+}
+#factor{
+    width: 90%;
 }
 
 /* team-imgs */
@@ -394,7 +405,8 @@ input {
 
 }
 
-.position,.lists {
+.position,
+.lists {
     margin-left: 20px;
     color: rgba(255, 255, 255, 0.50);
     font-family: Inter;
@@ -420,7 +432,7 @@ input {
 
 .paclist {
     border-radius: 50px;
-    margin: 2% 40%;
+    margin: 2% 38%;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
     background: rgb(217, 217, 217);
     margin-top: 2%;
@@ -439,6 +451,7 @@ input {
     display: flex;
     align-items: center;
     padding-left: 10px;
+    color: black;
 
 }
 
@@ -448,12 +461,21 @@ input {
 
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
     background: rgba(61, 61, 61, 0.8);
-    transition: transform 3s ,background-color 2s ease-in .1s;
+    transition: transform 3s, background-color 2s ease-in .1s;
 }
+
 .package:hover {
-    background-color:#e6533c56;
+    background-color: #E6533C;
     
+
     transform: rotateY(40deg);
+    .class-btn {
+        color: black;
+        
+        background-color: white;
+    
+    
+    }
 
 
 }
@@ -513,11 +535,11 @@ h6 {
     margin-bottom: 10px;
 }
 
-ul {
+.footer-links ul {
     list-style: none;
 }
 
-ul a {
+.footer-links ul a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
@@ -604,15 +626,18 @@ hr {
     }
 
     .team-imgs,
-    .membership .membership-div,.footer-cont {
+    .membership .membership-div,
+    .footer-cont {
         display: grid;
         grid-template-columns: 1fr;
 
     }
-    .paclist{
+
+    .paclist {
         margin: 3% 10%;
         zoom: 80%;
     }
+
     .membership {
         margin-bottom: 40%;
     }

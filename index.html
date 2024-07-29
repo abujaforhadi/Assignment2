@@ -17,7 +17,7 @@
                 <h1>Fitness</h1>
             </div>
             <ul class="nav-links class-flex">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" id="home">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -140,15 +140,19 @@
             <p class="bmi-paragraph">We believe fitness should be accessible to everyone, everywhere, regardless of
                 income or access to a gym.
             </p> <br>
-            <div class="inputs">
+            <form action="">
                 <input type="text" placeholder="Height/cm">
                 <input type="text" placeholder="Weight/kg"> <br>
                 <input type="text" placeholder="Age">
-                <select type="text" placeholder="Sex">sex
+                <select name="gender" id="sex">
+                    <option value="">Sex</option>
                 </select><br>
-                <input type="text" placeholder="Select an activity factor">
+                <select name="" id="factor">
+                    <option value="">Select an activity factor</option>
+                </select>
+                
 
-            </div>
+            </form>
             <button class="class-btn color-bg1">Calculate</button>
 
 
@@ -202,20 +206,29 @@
         <div class="membership-div">
             <div class="package">
                 <h2 class="package-titles">Day</h2>
-                <p class="lists"> These are typically month-to-month contracts,
-                    offering flexibility. You can suspend or cancel anytime</p>
-                <p class="lists"> Some gyms may require an annual fee, while others
-                    don’t. Check the terms at your local gym.</p>
-                </p>
+                <p>Facilities</p>
+                <ul>
+                    <li class="lists"> These are typically month-to-month contracts,
+                        offering flexibility. You can suspend or cancel anytime</li>
+                    <li class="lists"> Some gyms may require an annual fee, while others
+                        don’t. Check the terms at your local gym.</li>
+                    </p>
+                </ul>
+                <h6>Starting form <br> $5</h6>
                 <button class="class-btn color-bg1">Join Now <i class="fa-solid fa-arrow-right"></i></button>
 
             </div>
             <div class="package">
                 <h2 class="package-titles">Month</h2>
-                <p class="lists"> Committing to a 12-month agreement often provides
-                    benefits like lower rates and additional perks.</p>
-                <p class="lists"> You are locked in for a year, which may suit your
-                    long-term fitness goals.</p>
+                <p>Facilities</p>
+                <ul>
+                    <li class="lists"> Committing to a 12-month agreement often provides
+                        benefits like lower rates and additional perks.</li>
+                    <li class="lists"> You are locked in for a year, which may suit your
+                        long-term fitness goals.</li>
+
+                </ul>
+                <h6>Starting form <br> $100</h6>
                 <button class="class-btn color-bg1">Join Now <i class="fa-solid fa-arrow-right"></i></button>
 
 
@@ -223,12 +236,17 @@
             </div>
             <div class="package">
                 <h2 class="package-titles">Year</h2>
-                <p class="lists"> Offers 24/7 access to over 5,100 worldwide
-                    locations.</p>
-                <p class="lists"> Personalized fitness plans, expert coaches, and
-                    wellness programs included.</p>
-                <p class="lists"> Try it free and get up to 3 months of Apple
-                    Fitness+ access</p>
+                <p>Facilities</p>
+                <Ul>
+                    <li class="lists"> Offers 24/7 access to over 5,100 worldwide
+                        locations.</li>
+                    <li class="lists"> Personalized fitness plans, expert coaches, and
+                        wellness programs included.</li>
+                    <li class="lists"> Try it free and get up to 3 months of Apple
+                        Fitness+ access</li>
+         
+                </Ul>
+                <h6>Starting form <br> $1000</h6>
                 <button class="class-btn color-bg1">Join Now <i class="fa-solid fa-arrow-right"></i></button>
 
 
@@ -260,8 +278,8 @@
                 <li><a href="#">About Us</a></li>
             </ul>
         </div>
-        <div class="footer-others ">
-            <ul>
+        <div class="footer-links ">
+            <ul class="footer-link">
                 <li>
                     <h5 class="footer-header">Get Started</h5>
                 </li>
