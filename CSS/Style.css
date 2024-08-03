@@ -13,8 +13,6 @@ body {
     background-color: black;
     color: white;
 
-
-
 }
 
 .text-left {
@@ -81,7 +79,6 @@ body {
     font-family: Inter;
     font-size: 2.2rem;
     font-weight: 800;
-
     text-align: left;
 
 }
@@ -584,7 +581,7 @@ hr {
     }
 
     .navbar {
-        margin: 54px 20px;
+        padding: 20px 20px;
     }
 
     .burger {
