@@ -3,6 +3,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 
 
 }
@@ -71,7 +72,7 @@ body {
 
 .navbar {
     justify-content: space-between;
-    margin: 54px 190px;
+    padding:  54px 190px;
     align-items: center;
 }
 
