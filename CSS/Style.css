@@ -269,10 +269,10 @@ span {
 
 .tracking {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    margin: 7%;
-    justify-content: space-between;
-    padding: 3%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 7%;    
+    justify-items: flex-end;   
+    padding: 5%;
     border-radius: 18px;
     background: rgb(34, 34, 34);
 
@@ -281,13 +281,13 @@ span {
 .tracking-titles,
 .tracking-paragraph {
     text-align: left;
-    width: 90%;
+    width: 100%;
 }
 
 
 .tracking-img img {
     border-radius: 18px;
-    width: 80%;
+    width: 100%;
     
 }
 
